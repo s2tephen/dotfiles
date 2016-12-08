@@ -1,0 +1,60 @@
+"*":
+  core:
+    disabledPackages: [
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-go"
+      "language-java"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-toml"
+      "git-plus"
+      "merge-conflicts"
+      "expose"
+      "markdown-preview"
+      "metrics"
+      "exception-reporting"
+    ]
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+      "node_modules"
+      "vendor"
+      ".sass-cache"
+      ".bundle"
+    ]
+    projectHome: "/Users/ssuen/"
+    telemetryConsent: "no"
+    themes: [
+      "spacegray-dark-ui"
+      "spacegray-atom-dark-syntax"
+    ]
+    useCustomTitleBar: true
+  editor:
+    fontFamily: "Fira Code"
+    tabType: "soft"
+  minimap:
+    plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+      selection: true
+      selectionDecorationsZIndex: 0
+  "release-notes":
+    viewedVersion: "0.94.0"
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false

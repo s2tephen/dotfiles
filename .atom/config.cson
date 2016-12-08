@@ -1,4 +1,6 @@
 "*":
+  "atom-terminal":
+    app: "Hyper.app"
   core:
     disabledPackages: [
       "language-c"
@@ -36,6 +38,8 @@
   editor:
     fontFamily: "Fira Code"
     tabType: "soft"
+  "exception-reporting":
+    userId: "43e6f179-6677-63e1-f571-5feef753b96f"
   minimap:
     plugins:
       bookmarks: true

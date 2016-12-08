@@ -18,6 +18,7 @@
       "markdown-preview"
       "metrics"
       "exception-reporting"
+      "minimap-pigments"
     ]
     ignoredNames: [
       ".git"

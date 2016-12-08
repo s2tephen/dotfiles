@@ -1,5 +1,11 @@
 module.exports = {
   config: {
+    // visor settings
+    visor: {
+      hotkey: 'Cmd+>',
+      position: 'right'
+    },
+
     // default font size in pixels for all tabs
     fontSize: 14,
 
@@ -19,7 +25,7 @@ module.exports = {
     borderColor: '#333',
 
     // custom css to embed in the main window
-    css: '',    
+    css: '',
 
     // custom css to embed in the terminal window
     termCSS: 'x-screen x-row { line-height: 1em; font-variant-ligatures: contextual; }',
@@ -58,7 +64,11 @@ module.exports = {
   plugins: [
     'hyperterm-spacegray',
     'hyperterm-blink',
-    'hyperlinks'
+    'hyperlinks',
+    'hyperline',
+    'hyperterm-1password',
+    'hyperterm-visor',
+    'hyperterm-alternatescroll'
   ],
 
   // in development, you can create a directory under

@@ -8,31 +8,31 @@
 [heroku]
 	account = personal
 [alias]
-  aa = add -A
-  br = branch
-  cb = checkout -b
-  cm = commit -m
-  co = checkout
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-  pl = pull origin master
-  ps = push origin master
-  st = status
-  unstage = reset HEAD --
-  us = reset HEAD --
+	aa = add -A
+	br = branch
+	cb = checkout -b
+	cm = commit -m
+	co = checkout
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+	pl = pull origin master
+	ps = push origin master
+	st = status
+	unstage = reset HEAD --
+	us = reset HEAD --
 [color]
-  branch = auto
-  diff = auto
-  status = auto
+	branch = auto
+	diff = auto
+	status = auto
 [color "branch"]
-  current = yellow bold
-  local = yellow
-  remote = green
+	current = yellow bold
+	local = yellow
+	remote = green
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
 [color "status"]
-  added = green
-  changed = red
-  untracked = cyan
+	added = green
+	changed = red
+	untracked = cyan

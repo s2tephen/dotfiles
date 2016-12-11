@@ -13,9 +13,11 @@
   cb = checkout -b
   cm = commit -m
   co = checkout
+  df = diff
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-  pl = pull origin master
-  ps = push origin master
+  pl = pull
+  pom = push origin master
+  ps = push
   st = status
   unstage = reset HEAD --
   us = reset HEAD --

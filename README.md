@@ -15,6 +15,9 @@ Two spaces, soft tabs, syntax highlighting, no temp files
 #### `.virtualenvs/postactivate`
 Custom PS1 prompt when using a `virtualenv`
 
+#### `.yarnrc`
+Offline package mirror for `yarn`
+
 #### `.hyper.js`
 Fira Code w/ ligatures, Spacegrey theme, emoji line-height fix, plugins
 

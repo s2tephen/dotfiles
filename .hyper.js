@@ -1,9 +1,9 @@
 module.exports = {
   config: {
-    // visor settings
-    visor: {
-      hotkey: 'Cmd+>',
-      position: 'right'
+    // overlay settings
+    overlay: {
+      animate: false,
+      hasShadow: true
     },
 
     // default font size in pixels for all tabs
@@ -28,7 +28,7 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: 'x-screen x-row { line-height: 1em; font-variant-ligatures: contextual; }',
+    termCSS: 'x-screen x-row { font-variant-ligatures: contextual; }',
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
@@ -52,7 +52,9 @@ module.exports = {
       '#cc00ff',
       '#00ffff',
       '#ffffff'
-    ]
+    ],
+
+    windowSize: [1440, 878]
   },
 
   // a list of plugins to fetch and install from npm
@@ -63,12 +65,14 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyperterm-spacegray',
+    'hyper-statusline',
     'hyperterm-blink',
     'hyperlinks',
-    'hyperline',
     'hyperterm-1password',
-    'hyperterm-visor',
-    'hyperterm-alternatescroll'
+    'hyperterm-overlay',
+    'hyperterm-alternatescroll',
+    'hyperterm-themed-scrollbar',
+    'hyper-simple-highlight-active-session'
   ],
 
   // in development, you can create a directory under

@@ -1,5 +1,5 @@
 parse_git_dirty() {
-  [[ $(git status 2> /dev/null | tail -n1) != *"working tree clean"* ]] && echo -e ' \xf0\x9f\x96\x95 ' || echo -e ' \xf0\x9f\x91\x8c '
+  [[ $(git status 2> /dev/null | tail -n1) != *"working tree clean"* ]] && echo -e ' \xf0\x9f\x96\x95' || echo -e ' \xf0\x9f\x91\x8c'
 }
 
 parse_git_branch() {

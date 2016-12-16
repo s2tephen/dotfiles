@@ -10,14 +10,22 @@
 [alias]
   aa = add -A
   br = branch
+  ca = commit --amend
   cb = checkout -b
   cm = commit -m
   co = checkout
   df = diff
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+  fu = fetch upstream
+  lg = log --graph --pretty=format:'%C(green)%h%Creset%C(yellow)%d%Creset %s %C(173)(%an, %cr)%Creset' --abbrev-commit --date=relative
+  mg = merge
+  mum = merge upstream/master
+  nt = init
   pl = pull
   pom = push origin master
   ps = push
+  ra = remote add
+  rh = reset HEAD --hard
+  rs = reset
   st = status
   unstage = reset HEAD --
   us = reset HEAD --
@@ -31,10 +39,10 @@
   remote = green
 [color "diff"]
   meta = yellow bold
-  frag = magenta bold
+  frag = 173 bold
   old = red bold
   new = green bold
 [color "status"]
   added = green
-  changed = red
+  changed = 173
   untracked = cyan

@@ -33,7 +33,7 @@
     telemetryConsent: "no"
     themes: [
       "spacegray-dark-ui"
-      "spacegray-atom-dark-syntax"
+      "base16-ocean-dark-syntax-theme"
     ]
     useCustomTitleBar: true
   editor:

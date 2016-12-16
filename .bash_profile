@@ -20,13 +20,17 @@ export PATH=$HOME/.rbenv/bin:$PATH
 source "/usr/local/bin/virtualenvwrapper.sh"
 
 alias ~="cd ~"
+alias ..="cd .."
+alias ...="cd ../.."
+alias md="mkdir -p"
+
 alias f="open -a Finder ./"
-alias g="git"
 alias a="atom"
 alias s="subl"
 alias v="vim"
+alias g="git"
 alias c="clear"
 
-alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc"
 alias srv="python -m SimpleHTTPServer"
 alias venv="workon"
+alias denv="deactivate"

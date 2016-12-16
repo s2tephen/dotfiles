@@ -3,7 +3,7 @@
 backup=~/dotfiles_$(date +%Y_%m_%d)
 mkdir -p $backup
 
-find . -type d -name .git -prune -o -type f -name *.sh -o \
+find . -type d -name .git -prune -o -type f -name '*.sh' -o \
   -type f -print | cut -c 3- | while read file; do
   if [ -f ~/$file ];
   then

@@ -33,7 +33,11 @@ module.exports = {
     borderColor: bgColor,
 
     // custom css to embed in the main window
-    css: '',
+    css: `
+      body.closed-tabs .hyper_main .terms_terms {
+        margin-top: 24px;
+      }
+    `,
 
     // custom css to embed in the terminal window
     termCSS: `
@@ -105,17 +109,17 @@ module.exports = {
     'hyperterm-blink',
     'hyperlinks',
     'hyperterm-1password',
+    'hyper-autohide-tabs',
     'hyper-simple-highlight-active-session',
     'hyperterm-alternatescroll',
     'hyperterm-themed-scrollbar',
-    'hyper-statusline'
+    'hyper-statusline',
   ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
   localPlugins: [
-    'hyperterm-overlay',
-    'hyper-autohide-tabs'
+    'hyperterm-overlay'
   ]
 };

@@ -1,5 +1,6 @@
 local ret_status="%(?:%{$fg_bold[green]%}⚡:%{$fg_bold[red]%}⚡)"
-PROMPT='%{$fg_bold[blue]%}⚗ %~%{$reset_color%} $(git_prompt_info)${ret_status}%{$reset_color%} '
+NEWLINE=$'\n'
+PROMPT='%{$fg[cyan]%}%n%{$reset_color%} %{$fg_bold[blue]%}⚗ %~%{$reset_color%} $(git_prompt_info)$NEWLINE${ret_status}%{$reset_color%} '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}⑃ "
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "

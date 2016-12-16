@@ -16,7 +16,7 @@
   co = checkout
   df = diff
   fu = fetch upstream
-  lg = log --graph --pretty=format:'%C(green)%h%Creset%C(yellow)%d%Creset %s %C(173)(%an, %cr)%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%C(green bold)%h%Creset%C(yellow)%d%Creset %s %C(173)%cr%Creset %C(cyan)%an%Creset' --abbrev-commit --date=relative
   mg = merge
   mum = merge upstream/master
   nt = init

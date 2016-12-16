@@ -1,6 +1,5 @@
 syntax enable
 set ruler
-set cmdheight=2
 
 set nobackup
 set nowb

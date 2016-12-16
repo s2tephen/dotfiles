@@ -3,29 +3,27 @@ Assorted config and dotfiles for the inevitable twilight that awaits my 2012 Ret
 
 ## What's included
 
-#### `.bash_profile`
-Custom PS1 prompt, color settings, `rbenv` + `virtualenv` setup, aliases, #teamvim
+### Shell ([`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh))
+* **`.zshrc`** - Set PATH, `oh-my-zsh` theme and plugins, default editor, aliases
+* **`.bash_profile`** - Fallback `bash` settings when switching shells
+* **`.oh-my-zsh/custom/autotitle_patch.zsh`** - Set tab title to current working directory
+* **`.oh-my-zsh/custom/.zshplugins`** - List of `zsh` plugins (use `[import|export]-zsh-plugins.sh` to sync)
+* **`.oh-my-zsh/custom/plugins/rbenv/rbenv.plugin.zsh`** - Patch to use [`rbenv`](https://github.com/rbenv/rbenv) with `zsh`
+* **`.oh-my-zsh/custom/themes/ssuen.zsh-theme`** - Set prompt layout and LSCOLORS
 
-#### `.gitconfig`
-Git/Heroku credentials, colors, aliases for ants (all two letters long)
+### [Atom](https://github.com/atom/atom)
+* **`.atom/.atompkg`** - List of Atom packages (use `[import|export]-atom-packages.sh` to sync)
+* **`.atom/config.cson`** - Disabled core packages, font/theme settings, editor settings
+* **`.atom/styles.less`** - Override tree view colors and markdown preview styling
 
-#### `.vimrc`
-Two spaces, soft tabs, syntax highlighting, no temp files
+### [Hyper](https://github.com/zeit/hyper)
+* **`.hyper.js`** - Font/theme settings, link/underline styles, plugins and overrides, use `zsh` as shell
 
-#### `.virtualenvs/postactivate`
-Custom PS1 prompt when using a `virtualenv`
-
-#### `.yarnrc`
-Offline package mirror for `yarn`
-
-#### `.hyper.js`
-Fira Code w/ ligatures, Spacegrey theme, emoji line-height fix, plugins
-
-#### `.atom/.atompkg`
-List of Atom packages — use `fission.sh` and `fusion.sh` to sync
-
-#### `.atom/config.cson`
-Disabled core packages, Fira Code + Spacegrey, editor settings 
+### Other configs
+* **`.gitconfig`** - Git/Heroku credentials, colors, aliases for ants (two letters long)
+* **`.vimrc`** - Two spaces, soft tabs, syntax highlighting, no temp files
+* **`.virtualenvs/postactivate`** - Prompt styling for [`virtualenv`](https://github.com/pypa/virtualenv)
+* **`.yarnrc`** - Offline package mirror for [`yarn`](https://github.com/yarnpkg/yarn)
 
 ## Usage
 
@@ -37,13 +35,24 @@ $ chmod +x setup.sh
 $ ./setup.sh
 ```
 
+### `zsh` plugins
+```sh
+# Install/update all zsh plugins
+$ chmod +x import-zsh-plugins.sh
+$ ./import-zsh-plugins.sh
+
+# Refresh plugin list after installations
+$ chmod +x export-zsh-plugins.sh
+$ ./export-zsh-plugins.sh
+```
+
 ### Atom packages
 ```sh
 # Install all Atom packages
-$ chmod +x fusion.sh
-$ ./fusion.sh
+$ chmod +x import-atom-packages.sh
+$ ./import-atom-packages.sh
 
 # Refresh package list after updates/installations
-$ chmod +x fission.sh
-$ ./fission.sh
+$ chmod +x export-atom-packages.sh
+$ ./export-atom-packages.sh
 ```

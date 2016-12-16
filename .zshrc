@@ -17,6 +17,7 @@ alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
 alias md="mkdir -p"
+alias cx="chmod +x"
 
 alias f="open -a Finder ./"
 alias a="atom"

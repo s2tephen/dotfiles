@@ -10,6 +10,22 @@
 
 @import '../../.atom/packages/base16-ocean-dark-syntax-theme/styles/colors';
 
+.styled-scrollbar() {
+  &::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: rgb(28,31,37);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(35,40,48);
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgb(43,48,59);
+  }
+}
+
 .list-tree {
   li.list-nested-item.status-modified > .list-item,
   li:not(.list-nested-item).status-modified {
@@ -22,7 +38,21 @@
   }
 }
 
+.command-palette {
+  ol.list-group {
+    overflow-x: hidden;
+    .styled-scrollbar;
+  }
+}
+
+.settings-view {
+  .panels-item {
+    .styled-scrollbar;
+  }
+}
+
 .markdown-preview {
+  .styled-scrollbar;
   &[data-use-github-style] {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
                  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

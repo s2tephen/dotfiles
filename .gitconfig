@@ -12,6 +12,7 @@
   br = branch
   ca = commit --amend
   cb = checkout -b
+  cl = clone
   cm = commit -m
   co = checkout
   df = diff

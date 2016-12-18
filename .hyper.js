@@ -113,7 +113,7 @@ module.exports = {
     'hyper-simple-highlight-active-session',
     'hyperterm-alternatescroll',
     'hyperterm-themed-scrollbar',
-    'hyper-statusline',
+    'hyper-statusline'
   ],
 
   // in development, you can create a directory under

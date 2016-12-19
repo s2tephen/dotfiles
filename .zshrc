@@ -9,7 +9,7 @@ ZSH_THEME="ssuen"
 plugins=(zsh-autosuggestions zsh-syntax-highlighting rbenv gitfast)
 source $ZSH/oh-my-zsh.sh
 
-ZSH_HIGHLIGHT_HIGHLIGHTERS+=(commits)
+ZSH_HIGHLIGHT_HIGHLIGHTERS+=(commit)
 
 export EDITOR=/usr/bin/vim
 

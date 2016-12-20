@@ -1,5 +1,5 @@
 Zen@0.16.4
-atom-beautify@0.29.13
+atom-beautify@0.29.14
 atom-terminal@0.8.0
 atom-ternjs@0.16.1
 autoclose-html@0.23.0
@@ -11,7 +11,7 @@ color-picker@2.2.3
 docblockr@0.9.1
 expose@0.12.2
 file-icons@1.7.25
-git-plus@5.29.0
+git-plus@5.29.1
 highlight-selected@0.11.2
 language-babel@2.48.5
 language-csv@1.1.2
@@ -39,7 +39,7 @@ open-in-browser@0.4.7
 open-recent@5.0.0
 pigments@0.37.0
 project-manager@3.3.3
-script@3.12.2
+script@3.13.0
 simple-drag-drop-text@0.3.1
 sort-lines@0.14.0
 spacegray-dark-ui@0.12.0

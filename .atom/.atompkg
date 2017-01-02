@@ -1,5 +1,5 @@
 Zen@0.16.4
-atom-beautify@0.29.14
+atom-beautify@0.29.16
 atom-terminal@0.8.0
 atom-ternjs@0.16.1
 autoclose-html@0.23.0
@@ -10,8 +10,8 @@ base16-ocean-dark-syntax-theme@0.1.9
 color-picker@2.2.3
 docblockr@0.9.1
 expose@0.12.2
-file-icons@1.7.25
-git-plus@6.0.1
+file-icons@2.0.3
+git-plus@7.0.4
 highlight-selected@0.11.2
 language-babel@2.48.5
 language-csv@1.1.2
@@ -44,5 +44,5 @@ simple-drag-drop-text@0.3.1
 sort-lines@0.14.0
 spacegray-dark-ui@0.12.0
 tablr@1.8.0
-tabs-to-spaces@1.0.2
+tabs-to-spaces@1.0.3
 toggle-quotes@1.0.0

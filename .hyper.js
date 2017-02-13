@@ -65,6 +65,10 @@ module.exports = {
       x-screen x-row {
         font-variant-ligatures: contextual;
       }
+
+      x-screen .unicode-node {
+        display: inline;
+      }
     `,
 
     // custom padding (css format, i.e.: `top right bottom left`)

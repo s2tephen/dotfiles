@@ -1,3 +1,0 @@
-#!/bin/bash
-# This hook is sourced after every virtualenv is activated.
-PS1="%{$fg[magenta]%}⩔ `basename \"$VIRTUAL_ENV\"`%{$reset_color%} $_OLD_VIRTUAL_PS1"

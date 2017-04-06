@@ -1,12 +1,10 @@
 [user]
-  email = ssuen@mit.edu
+  email = stephen@cloudstitch.com
 [core]
-  excludesfile = /Users/ssuen/.gitignore
+  excludesfile = /Users/stephen/.gitignore_global
   editor = /usr/bin/vim
 [credential]
   helper = osxkeychain
-[heroku]
-  account = personal
 [alias]
   aa = add -A
   br = branch

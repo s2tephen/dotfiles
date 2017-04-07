@@ -12,9 +12,6 @@
       "language-perl"
       "language-php"
       "language-toml"
-      "git-plus"
-      "merge-conflicts"
-      "expose"
       "markdown-preview"
       "metrics"
       "exception-reporting"
@@ -24,6 +21,7 @@
       ".git"
       ".svn"
       ".DS_Store"
+      "bower_components"
       "node_modules"
       "vendor"
       ".sass-cache"
@@ -41,6 +39,7 @@
     tabType: "soft"
   "exception-reporting":
     userId: "43e6f179-6677-63e1-f571-5feef753b96f"
+  "markdown-preview-plus": {}
   minimap:
     plugins:
       bookmarks: true

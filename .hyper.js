@@ -33,11 +33,7 @@ module.exports = {
     borderColor: bgColor,
 
     // custom css to embed in the main window
-    css: `
-      body.closed-tabs .hyper_main .terms_terms {
-        margin-top: 24px;
-      }
-    `,
+    css: ``,
 
     // custom css to embed in the terminal window
     termCSS: `
@@ -96,7 +92,7 @@ module.exports = {
     ],
 
     // use zsh instead of bash
-    shell: '/usr/local/bin/zsh',
+    shell: '/bin/zsh',
 
     // open new windows in full screen
     windowSize: [1440, 878]
@@ -117,13 +113,13 @@ module.exports = {
     'hyper-simple-highlight-active-session',
     'hyperterm-alternatescroll',
     'hyperterm-themed-scrollbar',
-    'hyper-statusline'
+    'hyper-statusline',
+    'hyperterm-overlay'
   ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
   localPlugins: [
-    'hyperterm-overlay'
   ]
 };

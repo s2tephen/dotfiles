@@ -11,5 +11,5 @@ find . -type d -name .git -prune -o -type f -name '*.sh' -o \
     mkdir -p $backup/$dir
     mv -f ~/$file $backup/$dir
   fi
-  ln -s $file ~/$file
+  ln -s ~/dotfiles/$file ~/$file
 done

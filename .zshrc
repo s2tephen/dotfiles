@@ -1,10 +1,8 @@
 export ZSH=~/.oh-my-zsh
 ZSH_THEME="ssuen"
 
-plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
-
-ZSH_HIGHLIGHT_HIGHLIGHTERS+=(commit)
 
 export EDITOR=/usr/bin/vim
 

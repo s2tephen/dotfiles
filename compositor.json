@@ -1,0 +1,85 @@
+{
+  "name": "s2tephen/dotfiles",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Dotfiles",
+  "branch": "",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/s2tephen/dotfiles",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "dotfiles",
+      "subhead": "Assorted config and dotfiles",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "dotfiles: Assorted config and dotfiles",
+          "url": ""
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "s2tephen",
+          "repo": "dotfiles"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p>Assorted config and dotfiles for the inevitable twilight that awaits my 2012 Retina MBP, whose Y, U, I, O keys no longer work and whose fans scream &quot;kill me now&quot; on the daily.</p>\n<h2>What&apos;s included</h2>\n<h3>Shell (<a href=\"https://github.com/robbyrussell/oh-my-zsh\"><code>oh-my-zsh</code></a>)</h3>\n<ul>\n<li><strong><code>.zshrc</code></strong> - Set PATH, <code>oh-my-zsh</code> theme and plugins, default editor, aliases</li>\n<li><strong><code>.bash_profile</code></strong> - Fallback <code>bash</code> settings when switching shells</li>\n<li><strong><code>.oh-my-zsh/custom/autotitle_patch.zsh</code></strong> - Set tab title to current working directory</li>\n<li><strong><code>.oh-my-zsh/custom/.zshplugins</code></strong> - List of <code>zsh</code> plugins (use <code>[import|export]-zsh-plugins.sh</code> to sync)</li>\n<li><strong><code>.oh-my-zsh/custom/plugins/rbenv/rbenv.plugin.zsh</code></strong> - Patch to use <a href=\"https://github.com/rbenv/rbenv\"><code>rbenv</code></a> with <code>zsh</code></li>\n<li><strong><code>.oh-my-zsh/custom/themes/ssuen.zsh-theme</code></strong> - Set prompt layout and LSCOLORS</li>\n</ul>\n<h3><a href=\"https://github.com/atom/atom\">Atom</a></h3>\n<ul>\n<li><strong><code>.atom/.atompkg</code></strong> - List of Atom packages (use <code>[import|export]-atom-packages.sh</code> to sync)</li>\n<li><strong><code>.atom/config.cson</code></strong> - Disabled core packages, font/theme settings, editor settings</li>\n<li><strong><code>.atom/styles.less</code></strong> - Override tree view colors and markdown preview styling</li>\n</ul>\n<h3><a href=\"https://github.com/zeit/hyper\">Hyper</a></h3>\n<ul>\n<li><strong><code>.hyper.js</code></strong> - Font/theme settings, link/underline styles, plugins and overrides, use <code>zsh</code> as shell</li>\n</ul>\n<h3>Other configs</h3>\n<ul>\n<li><strong><code>.gitconfig</code></strong> - Git/Heroku credentials, colors, aliases for ants (two letters long)</li>\n<li><strong><code>.vimrc</code></strong> - Two spaces, soft tabs, syntax highlighting, no temp files</li>\n<li><strong><code>.virtualenvs/postactivate</code></strong> - Prompt styling for <a href=\"https://github.com/pypa/virtualenv\"><code>virtualenv</code></a></li>\n<li><strong><code>.yarnrc</code></strong> - Offline package mirror for <a href=\"https://github.com/yarnpkg/yarn\"><code>yarn</code></a></li>\n</ul>\n<h2>Usage</h2>\n<h3>Basic setup</h3>\n<pre>$ git <span class=\"hljs-built_in\">clone</span> https://github.com/s2tephen/dotfiles.git ~/dotfiles\n$ <span class=\"hljs-built_in\">cd</span> ~/dotfiles\n$ chmod +x setup.sh\n$ ./setup.sh</pre><h3><code>zsh</code> plugins</h3>\n<pre><span class=\"hljs-comment\"># Install/update all zsh plugins</span>\n$ chmod +x import-zsh-plugins.sh\n$ ./import-zsh-plugins.sh\n\n<span class=\"hljs-comment\"># Refresh plugin list after installations</span>\n$ chmod +x <span class=\"hljs-built_in\">export</span>-zsh-plugins.sh\n$ ./<span class=\"hljs-built_in\">export</span>-zsh-plugins.sh</pre><h3>Atom packages</h3>\n<pre><span class=\"hljs-comment\"># Install all Atom packages</span>\n$ chmod +x import-atom-packages.sh\n$ ./import-atom-packages.sh\n\n<span class=\"hljs-comment\"># Refresh package list after updates/installations</span>\n$ chmod +x <span class=\"hljs-built_in\">export</span>-atom-packages.sh\n$ ./<span class=\"hljs-built_in\">export</span>-atom-packages.sh</pre>"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/s2tephen/dotfiles",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/s2tephen",
+          "text": "s2tephen"
+        }
+      ]
+    }
+  ]
+}

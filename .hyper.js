@@ -11,7 +11,8 @@ module.exports = {
     overlay: {
       animate: false,
       hasShadow: true,
-      startAlone: true
+      startAlone: true,
+      hideOnBlur: true
     },
 
     // default font size in pixels for all tabs
@@ -27,7 +28,7 @@ module.exports = {
     foregroundColor: textColor,
 
     // terminal background color
-    backgroundColor: bgColor,
+    // backgroundColor: bgColor,
 
     // border color (window, tabs)
     borderColor: bgColor,

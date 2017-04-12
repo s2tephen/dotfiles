@@ -16,6 +16,7 @@
       "metrics"
       "exception-reporting"
       "minimap-pigments"
+      "deprecation-cop"
     ]
     ignoredNames: [
       ".git"
@@ -39,6 +40,7 @@
     tabType: "soft"
   "exception-reporting":
     userId: "43e6f179-6677-63e1-f571-5feef753b96f"
+  "linter-ui-default": {}
   "markdown-preview-plus": {}
   minimap:
     plugins:

@@ -2,6 +2,7 @@
   "atom-terminal":
     app: "Hyper.app"
   core:
+    allowPendingPaneItems: false
     disabledPackages: [
       "language-c"
       "language-clojure"
@@ -28,15 +29,16 @@
       ".sass-cache"
       ".bundle"
     ]
-    projectHome: "/Users/ssuen/"
+    projectHome: "/Users/stephen/"
     telemetryConsent: "no"
     themes: [
       "spacegray-dark-ui"
       "base16-ocean-dark-syntax-theme"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom-inset"
   editor:
     fontFamily: "Fira Code"
+    showIndentGuide: true
     tabType: "soft"
   "exception-reporting":
     userId: "43e6f179-6677-63e1-f571-5feef753b96f"
@@ -62,5 +64,6 @@
     viewedVersion: "0.94.0"
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false

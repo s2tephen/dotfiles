@@ -18,7 +18,6 @@ alias s="subl"
 alias v="vim"
 alias g="git"
 alias c="clear"
-alias redo="sudo $(history -p !!)"
 
 alias srv="python -m SimpleHTTPServer"
 alias gs="gulp serve"

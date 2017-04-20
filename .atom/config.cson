@@ -38,6 +38,7 @@
     titleBar: "custom-inset"
   editor:
     fontFamily: "Fira Code"
+    fontSize: 13
     showIndentGuide: true
     tabType: "soft"
   "exception-reporting":

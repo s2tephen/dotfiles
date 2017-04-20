@@ -4,7 +4,7 @@
   excludesfile = /Users/stephen/.gitignore_global
   editor = /usr/bin/vim
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 [alias]
   aa = add -A
   br = branch
@@ -24,6 +24,7 @@
   pom = push origin master
   ps = push
   ra = remote add
+  rb = rebase
   rh = reset HEAD --hard
   rs = reset
   st = status

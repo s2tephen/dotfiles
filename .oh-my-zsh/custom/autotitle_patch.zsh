@@ -5,5 +5,5 @@ function omz_termsupport_precmd {
     return
   fi
 
-  [[ $(pwd) == $HOME ]] && title "zsh" || title "%~"
+  [[ $(pwd) == $HOME ]] && title "~" || title "%~"
 }

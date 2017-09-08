@@ -16,16 +16,23 @@ alias f="open -a Finder ./"
 alias a="atom"
 alias s="subl"
 alias v="vim"
+alias vs="code"
 alias g="git"
 alias c="clear"
 
 alias srv="python -m SimpleHTTPServer"
-alias nb="npm run build"
-alias ni="npm install"
-alias nr="npm run"
-alias ns="npm start"
-alias nt="npm test"
-alias ya="yarn add"
-alias yi="yarn install"
-alias yr="yarn remove"
+alias pb="polymer build"
+alias ps="polymer serve"
+alias fs="firebase serve"
+alias fd="firebase deploy"
 alias cs="cloudstitch"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh

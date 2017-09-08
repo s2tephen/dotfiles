@@ -1,4 +1,6 @@
 "*":
+  "atom-package-deps":
+    ignored: []
   "atom-terminal":
     app: "Hyper.app"
   core:
@@ -43,7 +45,13 @@
     tabType: "soft"
   "exception-reporting":
     userId: "43e6f179-6677-63e1-f571-5feef753b96f"
-  "linter-ui-default": {}
+  linter:
+    disabledProviders: [
+      "CSSLint"
+    ]
+  "linter-sass-lint": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview-plus": {}
   minimap:
     plugins:
@@ -65,6 +73,5 @@
     viewedVersion: "0.94.0"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false

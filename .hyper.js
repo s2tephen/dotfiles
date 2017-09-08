@@ -8,12 +8,12 @@ const rgba = (color, alpha) => `rgba${color.slice(3, -1)},${alpha})`;
 module.exports = {
   config: {
     // overlay settings
-    overlay: {
-      animate: false,
-      hasShadow: true,
-      startAlone: true,
-      hideOnBlur: true
-    },
+    // overlay: {
+    //   animate: false,
+    //   hasShadow: true,
+    //   startAlone: true,
+    //   hideOnBlur: true
+    // },
 
     // default font size in pixels for all tabs
     fontSize: 14,
@@ -115,7 +115,7 @@ module.exports = {
     'hyperterm-alternatescroll',
     'hyperterm-themed-scrollbar',
     'hyper-statusline',
-    'hyperterm-overlay'
+    // 'hyperterm-overlay'
   ],
 
   // in development, you can create a directory under
